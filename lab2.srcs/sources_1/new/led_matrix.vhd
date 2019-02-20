@@ -65,24 +65,23 @@ architecture Behavioral of led_matrix is
     signal blue_pwm_sig         : std_logic_vector(7 downto 0) := "00000000";
 begin
 
-
+-- Increment counter
 counter_process: process (pwm_clock)
 begin
--- 125MHz / 2*2^13 = 7629kHz
    if rising_edge(pwm_clock) then
         counter <= counter + 1;
    end if;
 end process;
 
-
+-- State machine
 row_counter_process: process (row_clock)
 begin
    if rising_edge(row_clock) then
        -- State shift row
        if state = STATE_SHIFT_ROW then
-            red <= red_pwm_sig;
-            green <= green_pwm_sig;
-            blue <= blue_pwm_sig;
+            red     <= red_pwm_sig;
+            green   <= green_pwm_sig;
+            blue    <= blue_pwm_sig;
             
            case row_counter is
               when "000"  => row <= "01111111";
@@ -101,12 +100,13 @@ begin
        -- State ready
        elsif state = STATE_READY then
             row_counter <= row_counter + 1;
+            state       <= STATE_SHIFT_ROW;
+       
+       else
             state <= STATE_SHIFT_ROW;
        end if;
    end if;
 end process;
-
-
 
 
 row0:m_row

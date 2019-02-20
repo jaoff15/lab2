@@ -31,6 +31,7 @@ architecture Behavioral of m_row is
     end component;
 begin
 
+-- Generate color channel
 gen_color_channels: 
 for cc in 0 to 7 generate
   m_color_channel_nr: m_color_channel port map
