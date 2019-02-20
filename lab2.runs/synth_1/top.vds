@@ -2,8 +2,8 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Wed Feb 20 15:15:07 2019
-# Process ID: 24302
+# Start of session at: Wed Feb 20 16:20:10 2019
+# Process ID: 28912
 # Current directory: /home/offersen/Programs/vivadoprojects/Labs/lab2/lab2.runs/synth_1
 # Command line: vivado -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
 # Log file: /home/offersen/Programs/vivadoprojects/Labs/lab2/lab2.runs/synth_1/top.vds
@@ -15,9 +15,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 24322 
+INFO: Helper process launched with PID 28933 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1431.223 ; gain = 76.906 ; free physical = 1163 ; free virtual = 3705
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1431.230 ; gain = 76.906 ; free physical = 563 ; free virtual = 3703
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'top' [/home/offersen/Programs/vivadoprojects/Labs/lab2/lab2.srcs/sources_1/imports/sources_1/imports/new/top.vhd:17]
 INFO: [Synth 8-3491] module 'led_matrix' declared at '/home/offersen/Programs/vivadoprojects/Labs/lab2/lab2.srcs/sources_1/new/led_matrix.vhd:8' bound to instance 'led_matrix0' of component 'led_matrix' [/home/offersen/Programs/vivadoprojects/Labs/lab2/lab2.srcs/sources_1/imports/sources_1/imports/new/top.vhd:41]
@@ -25,7 +25,7 @@ INFO: [Synth 8-638] synthesizing module 'led_matrix' [/home/offersen/Programs/vi
 INFO: [Synth 8-226] default block is never used [/home/offersen/Programs/vivadoprojects/Labs/lab2/lab2.srcs/sources_1/new/led_matrix.vhd:87]
 INFO: [Synth 8-3491] module 'm_row' declared at '/home/offersen/Programs/vivadoprojects/Labs/lab2/lab2.srcs/sources_1/imports/sources_1/new/row.vhd:8' bound to instance 'row0' of component 'm_row' [/home/offersen/Programs/vivadoprojects/Labs/lab2/lab2.srcs/sources_1/new/led_matrix.vhd:112]
 INFO: [Synth 8-638] synthesizing module 'm_row' [/home/offersen/Programs/vivadoprojects/Labs/lab2/lab2.srcs/sources_1/imports/sources_1/new/row.vhd:20]
-INFO: [Synth 8-3491] module 'm_color_channel' declared at '/home/offersen/Programs/vivadoprojects/Labs/lab2/lab2.srcs/sources_1/imports/sources_1/new/color_channel.vhd:7' bound to instance 'color_channel0' of component 'm_color_channel' [/home/offersen/Programs/vivadoprojects/Labs/lab2/lab2.srcs/sources_1/imports/sources_1/new/row.vhd:34]
+INFO: [Synth 8-3491] module 'm_color_channel' declared at '/home/offersen/Programs/vivadoprojects/Labs/lab2/lab2.srcs/sources_1/imports/sources_1/new/color_channel.vhd:7' bound to instance 'm_color_channel_nr' of component 'm_color_channel' [/home/offersen/Programs/vivadoprojects/Labs/lab2/lab2.srcs/sources_1/imports/sources_1/new/row.vhd:36]
 INFO: [Synth 8-638] synthesizing module 'm_color_channel' [/home/offersen/Programs/vivadoprojects/Labs/lab2/lab2.srcs/sources_1/imports/sources_1/new/color_channel.vhd:19]
 INFO: [Synth 8-3491] module 'm_pwm_generator' declared at '/home/offersen/Programs/vivadoprojects/Labs/lab2/lab2.srcs/sources_1/imports/sources_1/new/pwm_generator.vhd:12' bound to instance 'pwm_generator_r' of component 'm_pwm_generator' [/home/offersen/Programs/vivadoprojects/Labs/lab2/lab2.srcs/sources_1/imports/sources_1/new/color_channel.vhd:30]
 INFO: [Synth 8-638] synthesizing module 'm_pwm_generator' [/home/offersen/Programs/vivadoprojects/Labs/lab2/lab2.srcs/sources_1/imports/sources_1/new/pwm_generator.vhd:20]
@@ -34,13 +34,13 @@ INFO: [Synth 8-256] done synthesizing module 'm_pwm_generator' (1#1) [/home/offe
 INFO: [Synth 8-3491] module 'm_pwm_generator' declared at '/home/offersen/Programs/vivadoprojects/Labs/lab2/lab2.srcs/sources_1/imports/sources_1/new/pwm_generator.vhd:12' bound to instance 'pwm_generator_g' of component 'm_pwm_generator' [/home/offersen/Programs/vivadoprojects/Labs/lab2/lab2.srcs/sources_1/imports/sources_1/new/color_channel.vhd:38]
 INFO: [Synth 8-3491] module 'm_pwm_generator' declared at '/home/offersen/Programs/vivadoprojects/Labs/lab2/lab2.srcs/sources_1/imports/sources_1/new/pwm_generator.vhd:12' bound to instance 'pwm_generator_b' of component 'm_pwm_generator' [/home/offersen/Programs/vivadoprojects/Labs/lab2/lab2.srcs/sources_1/imports/sources_1/new/color_channel.vhd:46]
 INFO: [Synth 8-256] done synthesizing module 'm_color_channel' (2#1) [/home/offersen/Programs/vivadoprojects/Labs/lab2/lab2.srcs/sources_1/imports/sources_1/new/color_channel.vhd:19]
-INFO: [Synth 8-3491] module 'm_color_channel' declared at '/home/offersen/Programs/vivadoprojects/Labs/lab2/lab2.srcs/sources_1/imports/sources_1/new/color_channel.vhd:7' bound to instance 'color_channel1' of component 'm_color_channel' [/home/offersen/Programs/vivadoprojects/Labs/lab2/lab2.srcs/sources_1/imports/sources_1/new/row.vhd:45]
-INFO: [Synth 8-3491] module 'm_color_channel' declared at '/home/offersen/Programs/vivadoprojects/Labs/lab2/lab2.srcs/sources_1/imports/sources_1/new/color_channel.vhd:7' bound to instance 'color_channel2' of component 'm_color_channel' [/home/offersen/Programs/vivadoprojects/Labs/lab2/lab2.srcs/sources_1/imports/sources_1/new/row.vhd:56]
-INFO: [Synth 8-3491] module 'm_color_channel' declared at '/home/offersen/Programs/vivadoprojects/Labs/lab2/lab2.srcs/sources_1/imports/sources_1/new/color_channel.vhd:7' bound to instance 'color_channel3' of component 'm_color_channel' [/home/offersen/Programs/vivadoprojects/Labs/lab2/lab2.srcs/sources_1/imports/sources_1/new/row.vhd:67]
-INFO: [Synth 8-3491] module 'm_color_channel' declared at '/home/offersen/Programs/vivadoprojects/Labs/lab2/lab2.srcs/sources_1/imports/sources_1/new/color_channel.vhd:7' bound to instance 'color_channel4' of component 'm_color_channel' [/home/offersen/Programs/vivadoprojects/Labs/lab2/lab2.srcs/sources_1/imports/sources_1/new/row.vhd:78]
-INFO: [Synth 8-3491] module 'm_color_channel' declared at '/home/offersen/Programs/vivadoprojects/Labs/lab2/lab2.srcs/sources_1/imports/sources_1/new/color_channel.vhd:7' bound to instance 'color_channel5' of component 'm_color_channel' [/home/offersen/Programs/vivadoprojects/Labs/lab2/lab2.srcs/sources_1/imports/sources_1/new/row.vhd:89]
-INFO: [Synth 8-3491] module 'm_color_channel' declared at '/home/offersen/Programs/vivadoprojects/Labs/lab2/lab2.srcs/sources_1/imports/sources_1/new/color_channel.vhd:7' bound to instance 'color_channel6' of component 'm_color_channel' [/home/offersen/Programs/vivadoprojects/Labs/lab2/lab2.srcs/sources_1/imports/sources_1/new/row.vhd:100]
-INFO: [Synth 8-3491] module 'm_color_channel' declared at '/home/offersen/Programs/vivadoprojects/Labs/lab2/lab2.srcs/sources_1/imports/sources_1/new/color_channel.vhd:7' bound to instance 'color_channel7' of component 'm_color_channel' [/home/offersen/Programs/vivadoprojects/Labs/lab2/lab2.srcs/sources_1/imports/sources_1/new/row.vhd:111]
+INFO: [Synth 8-3491] module 'm_color_channel' declared at '/home/offersen/Programs/vivadoprojects/Labs/lab2/lab2.srcs/sources_1/imports/sources_1/new/color_channel.vhd:7' bound to instance 'm_color_channel_nr' of component 'm_color_channel' [/home/offersen/Programs/vivadoprojects/Labs/lab2/lab2.srcs/sources_1/imports/sources_1/new/row.vhd:36]
+INFO: [Synth 8-3491] module 'm_color_channel' declared at '/home/offersen/Programs/vivadoprojects/Labs/lab2/lab2.srcs/sources_1/imports/sources_1/new/color_channel.vhd:7' bound to instance 'm_color_channel_nr' of component 'm_color_channel' [/home/offersen/Programs/vivadoprojects/Labs/lab2/lab2.srcs/sources_1/imports/sources_1/new/row.vhd:36]
+INFO: [Synth 8-3491] module 'm_color_channel' declared at '/home/offersen/Programs/vivadoprojects/Labs/lab2/lab2.srcs/sources_1/imports/sources_1/new/color_channel.vhd:7' bound to instance 'm_color_channel_nr' of component 'm_color_channel' [/home/offersen/Programs/vivadoprojects/Labs/lab2/lab2.srcs/sources_1/imports/sources_1/new/row.vhd:36]
+INFO: [Synth 8-3491] module 'm_color_channel' declared at '/home/offersen/Programs/vivadoprojects/Labs/lab2/lab2.srcs/sources_1/imports/sources_1/new/color_channel.vhd:7' bound to instance 'm_color_channel_nr' of component 'm_color_channel' [/home/offersen/Programs/vivadoprojects/Labs/lab2/lab2.srcs/sources_1/imports/sources_1/new/row.vhd:36]
+INFO: [Synth 8-3491] module 'm_color_channel' declared at '/home/offersen/Programs/vivadoprojects/Labs/lab2/lab2.srcs/sources_1/imports/sources_1/new/color_channel.vhd:7' bound to instance 'm_color_channel_nr' of component 'm_color_channel' [/home/offersen/Programs/vivadoprojects/Labs/lab2/lab2.srcs/sources_1/imports/sources_1/new/row.vhd:36]
+INFO: [Synth 8-3491] module 'm_color_channel' declared at '/home/offersen/Programs/vivadoprojects/Labs/lab2/lab2.srcs/sources_1/imports/sources_1/new/color_channel.vhd:7' bound to instance 'm_color_channel_nr' of component 'm_color_channel' [/home/offersen/Programs/vivadoprojects/Labs/lab2/lab2.srcs/sources_1/imports/sources_1/new/row.vhd:36]
+INFO: [Synth 8-3491] module 'm_color_channel' declared at '/home/offersen/Programs/vivadoprojects/Labs/lab2/lab2.srcs/sources_1/imports/sources_1/new/color_channel.vhd:7' bound to instance 'm_color_channel_nr' of component 'm_color_channel' [/home/offersen/Programs/vivadoprojects/Labs/lab2/lab2.srcs/sources_1/imports/sources_1/new/row.vhd:36]
 INFO: [Synth 8-256] done synthesizing module 'm_row' (3#1) [/home/offersen/Programs/vivadoprojects/Labs/lab2/lab2.srcs/sources_1/imports/sources_1/new/row.vhd:20]
 INFO: [Synth 8-3491] module 'simple_memory' declared at '/home/offersen/Programs/vivadoprojects/Labs/lab2/lab2.srcs/sources_1/imports/Downloads/simple_memory.vhd:7' bound to instance 'simple_memory0' of component 'simple_memory' [/home/offersen/Programs/vivadoprojects/Labs/lab2/lab2.srcs/sources_1/new/led_matrix.vhd:124]
 INFO: [Synth 8-638] synthesizing module 'simple_memory' [/home/offersen/Programs/vivadoprojects/Labs/lab2/lab2.srcs/sources_1/imports/Downloads/simple_memory.vhd:14]
@@ -51,7 +51,7 @@ INFO: [Synth 8-256] done synthesizing module 'simple_memory' (4#1) [/home/offers
 INFO: [Synth 8-256] done synthesizing module 'led_matrix' (5#1) [/home/offersen/Programs/vivadoprojects/Labs/lab2/lab2.srcs/sources_1/new/led_matrix.vhd:18]
 INFO: [Synth 8-256] done synthesizing module 'top' (6#1) [/home/offersen/Programs/vivadoprojects/Labs/lab2/lab2.srcs/sources_1/imports/sources_1/imports/new/top.vhd:17]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1476.973 ; gain = 122.656 ; free physical = 1175 ; free virtual = 3717
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1476.980 ; gain = 122.656 ; free physical = 574 ; free virtual = 3714
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -64,10 +64,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1476.973 ; gain = 122.656 ; free physical = 1174 ; free virtual = 3717
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1476.980 ; gain = 122.656 ; free physical = 574 ; free virtual = 3714
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1476.973 ; gain = 122.656 ; free physical = 1174 ; free virtual = 3717
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1476.980 ; gain = 122.656 ; free physical = 574 ; free virtual = 3714
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -114,33 +114,33 @@ Resolution: If [get_<value>] was used to populate the object, check to make sure
 Finished Parsing XDC File [/home/offersen/Programs/vivadoprojects/Labs/lab2/lab2.srcs/constrs_1/imports/Programs/RGB_Matrix_constrains.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/offersen/Programs/vivadoprojects/Labs/lab2/lab2.srcs/constrs_1/imports/Programs/RGB_Matrix_constrains.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1796.105 ; gain = 0.000 ; free physical = 923 ; free virtual = 3465
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1796.105 ; gain = 0.000 ; free physical = 323 ; free virtual = 3463
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1796.105 ; gain = 0.000 ; free physical = 923 ; free virtual = 3466
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1796.105 ; gain = 0.000 ; free physical = 323 ; free virtual = 3463
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1796.105 ; gain = 0.000 ; free physical = 923 ; free virtual = 3466
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1796.105 ; gain = 0.000 ; free physical = 923 ; free virtual = 3466
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1796.105 ; gain = 0.000 ; free physical = 323 ; free virtual = 3463
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1796.105 ; gain = 0.000 ; free physical = 323 ; free virtual = 3463
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1796.105 ; gain = 441.789 ; free physical = 1000 ; free virtual = 3543
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1796.105 ; gain = 441.781 ; free physical = 401 ; free virtual = 3541
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1796.105 ; gain = 441.789 ; free physical = 1000 ; free virtual = 3542
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1796.105 ; gain = 441.781 ; free physical = 401 ; free virtual = 3541
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1796.105 ; gain = 441.789 ; free physical = 1002 ; free virtual = 3544
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1796.105 ; gain = 441.781 ; free physical = 403 ; free virtual = 3543
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1796.105 ; gain = 441.789 ; free physical = 993 ; free virtual = 3536
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 1796.105 ; gain = 441.781 ; free physical = 394 ; free virtual = 3535
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -212,7 +212,7 @@ INFO: [Synth 8-3886] merging instance 'led_matrix0/green_reg[0]' (FDE) to 'led_m
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\led_matrix0/green_reg[7] )
 INFO: [Synth 8-3886] merging instance 'led_matrix0/red_reg[0]' (FDE) to 'led_matrix0/red_reg[7]'
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1796.105 ; gain = 441.789 ; free physical = 981 ; free virtual = 3525
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1796.105 ; gain = 441.781 ; free physical = 382 ; free virtual = 3524
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -224,13 +224,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 1796.105 ; gain = 441.789 ; free physical = 854 ; free virtual = 3398
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1796.105 ; gain = 441.781 ; free physical = 254 ; free virtual = 3396
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1796.105 ; gain = 441.789 ; free physical = 850 ; free virtual = 3394
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 1796.105 ; gain = 441.781 ; free physical = 250 ; free virtual = 3392
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -242,7 +242,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1796.105 ; gain = 441.789 ; free physical = 849 ; free virtual = 3394
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 1796.105 ; gain = 441.781 ; free physical = 250 ; free virtual = 3392
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -266,7 +266,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1796.105 ; gain = 441.789 ; free physical = 850 ; free virtual = 3394
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 1796.105 ; gain = 441.781 ; free physical = 250 ; free virtual = 3392
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -279,7 +279,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1796.105 ; gain = 441.789 ; free physical = 850 ; free virtual = 3394
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 1796.105 ; gain = 441.781 ; free physical = 250 ; free virtual = 3392
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -291,25 +291,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1796.105 ; gain = 441.789 ; free physical = 850 ; free virtual = 3394
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 1796.105 ; gain = 441.781 ; free physical = 250 ; free virtual = 3392
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1796.105 ; gain = 441.789 ; free physical = 850 ; free virtual = 3394
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 1796.105 ; gain = 441.781 ; free physical = 250 ; free virtual = 3392
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1796.105 ; gain = 441.789 ; free physical = 850 ; free virtual = 3394
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 1796.105 ; gain = 441.781 ; free physical = 250 ; free virtual = 3392
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1796.105 ; gain = 441.789 ; free physical = 850 ; free virtual = 3394
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 1796.105 ; gain = 441.781 ; free physical = 250 ; free virtual = 3392
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -340,42 +340,42 @@ Report Cell Usage:
 +------+-------+------+
 
 Report Instance Areas: 
-+------+------------------------+------------------+------+
-|      |Instance                |Module            |Cells |
-+------+------------------------+------------------+------+
-|1     |top                     |                  |   274|
-|2     |  led_matrix0           |led_matrix        |   222|
-|3     |    row0                |m_row             |    10|
-|4     |      color_channel3    |m_color_channel   |     4|
-|5     |        pwm_generator_g |m_pwm_generator_3 |     2|
-|6     |        pwm_generator_r |m_pwm_generator_4 |     2|
-|7     |      color_channel4    |m_color_channel_0 |     6|
-|8     |        pwm_generator_b |m_pwm_generator   |     2|
-|9     |        pwm_generator_g |m_pwm_generator_1 |     2|
-|10    |        pwm_generator_r |m_pwm_generator_2 |     2|
-+------+------------------------+------------------+------+
++------+-------------------------------------------------+------------------+------+
+|      |Instance                                         |Module            |Cells |
++------+-------------------------------------------------+------------------+------+
+|1     |top                                              |                  |   274|
+|2     |  led_matrix0                                    |led_matrix        |   222|
+|3     |    row0                                         |m_row             |    10|
+|4     |      \gen_color_channels[3].m_color_channel_nr  |m_color_channel   |     4|
+|5     |        pwm_generator_g                          |m_pwm_generator_3 |     2|
+|6     |        pwm_generator_r                          |m_pwm_generator_4 |     2|
+|7     |      \gen_color_channels[4].m_color_channel_nr  |m_color_channel_0 |     6|
+|8     |        pwm_generator_b                          |m_pwm_generator   |     2|
+|9     |        pwm_generator_g                          |m_pwm_generator_1 |     2|
+|10    |        pwm_generator_r                          |m_pwm_generator_2 |     2|
++------+-------------------------------------------------+------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1796.105 ; gain = 441.789 ; free physical = 850 ; free virtual = 3394
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 1796.105 ; gain = 441.781 ; free physical = 250 ; free virtual = 3392
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1796.105 ; gain = 122.656 ; free physical = 907 ; free virtual = 3451
-Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1796.113 ; gain = 441.789 ; free physical = 907 ; free virtual = 3451
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1796.105 ; gain = 122.656 ; free physical = 308 ; free virtual = 3450
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 1796.113 ; gain = 441.781 ; free physical = 308 ; free virtual = 3450
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 36 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1796.113 ; gain = 0.000 ; free physical = 847 ; free virtual = 3391
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1796.113 ; gain = 0.000 ; free physical = 247 ; free virtual = 3389
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 49 Infos, 13 Warnings, 12 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1796.113 ; gain = 441.891 ; free physical = 903 ; free virtual = 3448
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1796.113 ; gain = 0.000 ; free physical = 903 ; free virtual = 3448
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1796.113 ; gain = 441.883 ; free physical = 303 ; free virtual = 3445
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1796.113 ; gain = 0.000 ; free physical = 303 ; free virtual = 3445
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/offersen/Programs/vivadoprojects/Labs/lab2/lab2.runs/synth_1/top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Feb 20 15:15:47 2019...
+INFO: [Common 17-206] Exiting Vivado at Wed Feb 20 16:20:51 2019...

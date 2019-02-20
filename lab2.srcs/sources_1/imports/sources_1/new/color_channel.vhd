@@ -34,6 +34,7 @@ port map(
     pwm     => red_pwm
 );
 
+
 -- The green LED
 pwm_generator_g:m_pwm_generator
 port map(
