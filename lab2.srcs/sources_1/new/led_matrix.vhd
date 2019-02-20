@@ -108,7 +108,7 @@ begin
    end if;
 end process;
 
-
+-- Create instance of row component
 row0:m_row
 port map(
     counter     => counter,
@@ -120,7 +120,7 @@ port map(
     blue_pwm    => blue_pwm_sig
 );
 
-
+-- Create instance of simple_memory component
 simple_memory0: simple_memory
 port map(
     row_addr       => std_logic_vector(row_counter),
